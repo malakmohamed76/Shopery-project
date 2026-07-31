@@ -1,0 +1,192 @@
+
+.banner{
+    width: 100%;
+    height: 120px;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+/* ===================filter=========================== */
+
+.product-img{
+    height: 100% !important;
+}
+.filter-btn{
+
+    background:#198754;
+    padding:12px 25px;
+    border:none;
+    font-weight:600;
+}
+
+
+.filter-btn:hover{
+
+    background:#146c43;
+
+}
+
+
+
+.sidebar-box{
+
+    background:#fff;
+    padding:22px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.filter-title{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    margin-bottom:20px;
+
+}
+
+
+
+.filter-title h5{
+
+    margin:0;
+    font-weight:700;
+
+}
+
+
+.filter-title i{
+
+    color:#198754;
+
+}
+
+
+
+
+.form-check-label{
+
+    color:#666;
+    cursor:pointer;
+
+}
+
+
+
+.form-check-label span{
+
+    color:#999;
+
+}
+
+
+
+.active-category{
+
+    color:#198754 !important;
+    font-weight:bold;
+
+}
+
+
+
+
+.form-range{
+
+    accent-color:#198754;
+
+}
+
+
+
+
+.price-text{
+
+    color:#777;
+
+}
+
+
+.price-text strong{
+
+    color:#198754;
+
+}
+
+
+
+
+.rating-item{
+
+    display:flex;
+    gap:15px;
+    margin-bottom:12px;
+
+}
+
+
+
+.stars{
+
+    color:#ffc107;
+    font-size:18px;
+
+}
+
+
+
+
+.tags{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+}
+
+
+
+.tag-btn{
+
+    border:none;
+    background:#f1f1f1;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:.3s;
+
+}
+
+
+
+.tag-btn:hover,
+.tag-btn.active{
+
+    background:#198754;
+    color:white;
+
+}
+
+
+
+
+
+@media (min-width: 571px) and (max-width: 991px){
+
+
+    .filter-container{
+
+        width:100%;
+        margin-bottom:20px;
+
+    }
+
+
+}

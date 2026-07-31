@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login&register.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+    
+
+
+<div class="container">
+   <!--start form-->
+     <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+       <!-- <span class="icone-close"><i class="fa-sharp fa-solid fa-xmark"></i></span> -->
+       <div class="from-box login">
+         <h2 class="animation" style="--i:0; --j:21;">login</h2>
+         <form action="#" id="loginForm">
+           <div class="input-box animation"
+           style="--i:1;--j:22;">
+             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+             <input type="email" id="loginEmail" required >
+             <label >Email</label>
+
+           </div>
+           <div class="input-box animation"
+           style="--i:2;--j:23;">
+             <span class="icon"><i class="fa-sharp fa-solid fa-lock"></i></span>
+             <input type="password" id="loginPassword" required>
+             <label >password</label>
+             </div>
+             <div class="remember-forget animation " style="--i:3;--j:24;">
+               <label ><input type="checkbox">Remember me </label>
+               <a href="#">Forget password?</a>
+             </div>
+             <button type="submit" class="btn animation "style="--i:4;--j:25;"  id="sign_in">login </button>
+             <div class="login-register animation"style="--i:5;--j:26;">
+               <p>Dont have an account? <a href="#" class="register-link">Register</a></p>
+             </div>
+             
+         </form>
+
+       </div>
+      
+
+
+
+       <div class="info-text login">
+        <h2 class="animation" style="--i:0;--j:20;">welcome Back!</h2>
+        <p class="animation"style="--i:1; --j:21;">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+       </div>
+   
+
+
+       <div class="from-box register">
+         <h2 class="animation " style="--i:17;--j:0;">Registration</h2>
+         <form action="#" id="registerForm">
+           <div class="input-box animation "style="--i:18;--j:1;">
+             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+             <input type="text" id="username" required>
+             <label >Usename</label>
+
+           </div>
+           
+           <div class="input-box animation" style="--i:19; --j:2;">
+             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+             <input type="email" id="email" required>
+             <label >Email</label>
+
+           </div>
+           <div class="input-box animation" style="--i:20;--j:3;">
+             <span class="icon"><i class="fa-sharp fa-solid fa-lock"></i></span>
+             <input type="password" id="password" required>
+             <label >password</label>
+             </div>
+             <div class="remember-forget animation" style="--i:21;--j:4;">
+               <label ><input type="checkbox">agree to the terms & conditions</label>
+               
+             </div>
+             <button type="submit" class="btn animation" style="--i:22;--j:5;" id="sign_up">Register </button>
+             <div class="login-register animation" style="--i:23;--j:6;">
+               <p>Already have an account? <a href="#" class="login-link">login</a></p>
+             </div>
+         </form>
+         </div>
+         <div class="info-text register" >
+            <h2 class="animation" style="--i:17; --j:0;" >welcome Back!</h2>
+            <p class="animation" style="--i:18;--j:1;">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+           </div>
+        </div>
+        </div>
+    <!--start form-->
+
+    <script src="./js/loginandregister.js"></script>
+</body>
+</html>

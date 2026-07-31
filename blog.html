@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar py-2 border-bottom">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="text-secondary small">
+                        <i class="bi bi-geo-alt"></i>
+                        Store Location: Lincoln-344, Illinois, Chicago, USA
+                    </div>
+
+                    <div class="d-flex gap-3 small text-secondary">
+
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-secondary" data-bs-toggle="dropdown">
+                                Eng
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-secondary" data-bs-toggle="dropdown">
+                                USD
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EGP</a></li>
+                            </ul>
+                        </div>
+
+                        <ul id="links">
+
+                            <li><a href="login&register.html">Sign up</a></li>
+                        </ul>
+                        <ul id="user_info">
+                            <li><a href="#" id="user"></a></li>
+                            <li><a href="#" id="logout">
+                                    <i class="fa-solid fa-right-from-bracket"></i> <br>
+                                    <span>logout</span> </a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="py-4">
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-3">
+                        <h2 class="logo">
+                            <i class="fa-solid fa-leaf text-success"></i>
+                            <a href="index.html" class="text-dark"> Ecobazar</a>
+                        </h2>
+                    </div>
+
+                    <!-- Search -->
+
+                    <div class="col-lg-6">
+
+                        <div class="input-group">
+
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <input type="text" class="form-control" placeholder="Search">
+
+                            <button class="btn btn-success px-4 z-3">
+                                Search
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Icons -->
+
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-end align-items-center gap-4">
+
+                            <i class="bi bi-heart fs-4"></i>
+
+                            <div class="vr"></div>
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <i class="bi bi-bag fs-4"></i>
+
+                                <div>
+
+                                    <small class="text-secondary">
+                                        Shopping cart
+                                    </small>
+
+                                    <h6 class="mb-0">
+                                        $57.00
+                                    </h6>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <!-- Home -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+
+                                Home
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="index.html">Home 2</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Shop -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                Shop
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="shop.html">Shop Grid</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop List</a></li>
+                                 <!-- <li><a class="dropdown-item" href="shopping-cart-popup.html">Shop List</a></li> -->
+                                  <li><a class="dropdown-item" href="shopping-cart.html">Shop Cart</a></li>
+                                   <li><a class="dropdown-item" href="product-details.html">Shop Details</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Pages -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                Pages
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="whislist.html">WhishList</a></li>
+                                <li><a class="dropdown-item" href="About.html">About</a></li>
+                                <li><a class="dropdown-item" href="Contact.html">contact Us</a></li>
+                                <li><a class="dropdown-item" href="Checkout.html">checkout</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="order history.html">Order History</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">404</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Blog -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                Blog
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="ms-auto text-white">
+
+                        <i class="bi bi-telephone"></i>
+
+                        (219) 555-0114
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    
+    <section class="breadcrumb-section mb-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="fa-solid fa-house me-2"></i> Home</li>
+                    <li class="breadcrumb-item">Blog</li>
+                    <li class="breadcrumb-item active">Single Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="container mt-5">
+        <div class="row">
+
+
+            <div class="col-lg-8">
+
+                <div class="blog-image mb-4">
+                    <img src="images/53729c74770839141d2436e9ebaa892ccdfd82e9.jpg" class="img-fluid rounded">
+                </div>
+
+                <div class="blog-meta mb-3">
+                    <span class="me-4"><i class="fa-solid fa-tag me-1"></i> Food</span>
+                    <span class="me-4"><i class="fa-solid fa-user me-1"></i> By Admin</span>
+                    <span><i class="fa-solid fa-comment me-1"></i> 65 Comments</span>
+                </div>
+
+                <h2 class="blog-title mb-4">Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.</h2>
+
+                <div class="author-row d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="images/person.png" class="rounded-circle me-3" width="45" height="45">
+                        <div>
+                            <h6 class="mb-0">Cameron Williamson</h6>
+                            <small class="text-muted">4 April, 2021 • 6 min read</small>
+                        </div>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="#" class="me-2"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="me-2 twitter-active"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-content mb-4">
+                    <p class="fw-semibold mb-3">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                    </p>
+                    <p class="mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ante ac tempus maximus. Fusce malesuada sed velit ut dictum. Morbi vitae faucibus orci at euismod. Integer auctor augue in erat vehicula, quis fermentum ex finibus.
+                    </p>
+                    <p class="mb-4">
+                        Mauris pretium elit a dui pulvinar, in ornare sapien euismod. Nullam interdum nisl ante, id feugiat quam euismod commodo. Sed ultrices lectus ut iaculis rhoncus. Aenean non dignissim justo, at fermentum turpis. Sed molestie, ligula ut molestie ultrices,
+                        tellus ligula viverra neque, malesuada consectetur diam sapien volutpat risus. Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit ut ridiculus mus.
+                    </p>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <img src="images/orange-collection.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/mango.jpg" class="img-fluid rounded">
+                    </div>
+                </div>
+
+                <div class="blog-content mb-4">
+                    <p>
+                        Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis vehicula ut, vestibulum ut mauris. Nullam non felis varius dui rutrum rutrum in a nisi. Suspendisse elementum rutrum lorem sed luctus. Proin iaculis euismod metus non sollicitudin. Duis
+                        vel luctus lacus. Nullam faucibus iaculis convallis. In ullamcorper nibh ipsum, eget lacinia eros pulvinar a. Integer accumsan arcu nec faucibus ultricies.
+                    </p>
+                </div>
+
+                <div class="ad-banner mb-4 d-flex align-items-center justify-content-between flex-wrap position-relative overflow-hidden">
+                    <div class="ad-text">
+                        <small class="text-uppercase text-white-50">Summer Sales</small>
+                        <h2 class="text-white fw-bold my-2">Fresh Fruit</h2>
+                        <a href="../Ali_part/shopping-cart.html" class="btn btn-success rounded-pill px-4">
+                            Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="ad-badge">
+                        <span class="badge-inner">
+                            UP TO<br><strong>56%</strong>Off
+                        </span>
+                    </div>
+
+                    <img src="images/vegetables 2.jpg" class="ad-image">
+                </div>
+
+                <div class="comment-form mb-5">
+                    <h4 class="mb-4 fw-bold">Leave a Comment</h4>
+
+                    <form id="commentForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Your name">
+                                <p class="text-danger "></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <p class="text-danger mb-0 "></p>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Write your comment here..."></textarea>
+                            <p class="text-danger mb-0 "></p>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="saveInfo">
+                            <label class="form-check-label" for="saveInfo">
+                                Save my name and email in this browser for the next time I comment.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success rounded-pill px-4">Post Comments</button>
+                    </form>
+                </div>
+
+                <div class="comments-list mb-5">
+                    <h4 class="mb-4 fw-bold">Comments</h4>
+
+                    <div id="commentsContainer">
+                        <div class="comment-item d-flex mb-4">
+                            <img src="images/avatar.png" class="rounded-circle me-3" width="45" height="45" alt="Avatar">
+                            <div>
+                                <h6 class="mb-1">Annette Black <small class="text-muted fw-normal">• 26 Apr, 2021</small></h6>
+                                <p class="mb-0 text-muted">In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item d-flex mb-4">
+                            <img src="images/avatar.png" class="rounded-circle me-3" width="45" height="45" alt="Avatar">
+                            <div>
+                                <h6 class="mb-1">Devon Lane <small class="text-muted fw-normal">• 24 Apr, 2021</small></h6>
+                                <p class="mb-0 text-muted">Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh nibh bibendum elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item d-flex mb-4 extra-comment d-none">
+                            <img src="images/avatar.png" class="rounded-circle me-3" width="45" height="45" alt="Avatar">
+                            <div>
+                                <h6 class="mb-1">Jacob Jones <small class="text-muted fw-normal">• 20 Apr, 2021</small></h6>
+                                <p class="mb-0 text-muted">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-item d-flex mb-4 extra-comment d-none">
+                            <img src="images/avatar.png" class="rounded-circle me-3" width="45" height="45" alt="Avatar">
+                            <div>
+                                <h6 class="mb-1">Jane Cooper <small class="text-muted fw-normal">• 18 Apr, 2021</small></h6>
+                                <p class="mb-0 text-muted">Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-success rounded-pill px-4" id="loadMoreBtn">Load More</button>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-4">
+
+                <div class="sidebar-search mb-4">
+                    <div class="position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute" style="left: 15px; top: 50%; transform: translateY(-50%); color: #999;"></i>
+                        <input type="text" class="form-control ps-5" placeholder="Search...">
+                    </div>
+                </div>
+
+                <div class="sidebar-categories mb-4">
+                    <h5 class="fw-bold mb-3">Top Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span>Fresh Fruit</span>
+                            <span class="text-muted">(134)</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span>Vegetables</span>
+                            <span class="text-muted">(150)</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span>Cooking</span>
+                            <span class="text-muted">(54)</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span>Snacks</span>
+                            <span class="text-muted">(47)</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span>Beverages</span>
+                            <span class="text-muted">(43)</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span>Beauty & Health</span>
+                            <span class="text-muted">(38)</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2">
+                            <span>Bread & Bakery</span>
+                            <span class="text-muted">(15)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-tags mb-4">
+                    <h5 class="fw-bold mb-3">Popular Tag</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="tag-badge">Healthy</a>
+                        <a href="#" class="tag-badge active">Low fat</a>
+                        <a href="#" class="tag-badge">Vegetarian</a>
+                        <a href="#" class="tag-badge">Bread</a>
+                        <a href="#" class="tag-badge">Kid foods</a>
+                        <a href="#" class="tag-badge">Vitamins</a>
+                        <a href="#" class="tag-badge">Snacks</a>
+                        <a href="#" class="tag-badge">Tiffin</a>
+                        <a href="#" class="tag-badge">Meat</a>
+                        <a href="#" class="tag-badge">Launch</a>
+                        <a href="#" class="tag-badge">Dinner</a>
+                    </div>
+                </div>
+                <div class="sidebar-gallery mb-4">
+                    <h5 class="fw-bold mb-3">Our Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-3">
+                            <img src="images/paper.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/bruckly.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/bruckly.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/paper.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/orange-collection.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/vegetables 2.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/mango.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/paper.jpg" class="img-fluid rounded gallery-img">
+                        </div>
+                    </div>
+                    <div class="sidebar-recent mb-4 mt-5">
+                        <h5 class="fw-bold mb-3">Recently Added</h5>
+
+                        <div class="recent-post d-flex mb-3">
+                            <img src="images/paper.jpg" class="recent-thumb rounded me-3">
+                            <div>
+                                <p class="mb-1 recent-title">Curabitur porttitor orci eget nequ accumsan.</p>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i> Apr 25, 2021</small>
+                            </div>
+                        </div>
+
+                        <div class="recent-post d-flex mb-3">
+                            <img src="images/mango.jpg" class="recent-thumb rounded me-3">
+                            <div>
+                                <p class="mb-1 recent-title">Donec mattis arcu faucibus suscipit viverra.</p>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i> Apr 25, 2021</small>
+                            </div>
+                        </div>
+
+                        <div class="recent-post d-flex mb-3">
+                            <img src="images/vegetables 2.jpg" class="recent-thumb rounded me-3">
+                            <div>
+                                <p class="mb-1 recent-title">Quisque posuere tempus rutrum. Integer velit ex.</p>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i> Apr 25, 2021</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h5>Subcribe our Newsletter</h5>
+                    <p class="text-secondary">
+                        Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="input-group pt-4">
+                        <input type="email" class="form-control border-end-0 rounded-pill ps-4" placeholder="Your email address" />
+
+                        <button class="btn btn-success rounded-pill px-4" type="button">
+                Subscribe
+              </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 pt-4">
+                    <img src="images/facebook 1.png" alt="" class="bg-success py-2 px-2 rounded-circle footer-img" />
+                    <img src="images/Social Media (1).png" alt="" />
+                    <img src="images/Social Media (2).png" alt="" />
+                    <img src="images/Social Media.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold">
+                        <i class="fa-solid fa-leaf text-success"></i> Ecobazar
+                    </h3>
+
+                    <p class="text-secondary mt-3">
+                        Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <span class="border-bottom border-success pb-1">(219) 555-0114</span
+              >
+              <span class="text-secondary">or</span>
+                        <span class="border-bottom border-success pb-1">
+                Proxy@gmail.com
+              </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <h5 class="mb-3">My Account</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">My Account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Order History</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Shopping Cart</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Wishlist</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Helps</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="../menna_part/Final_project/Html/Contact.html" class="text-secondary text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="../mohamed_part/faq.html" class="text-secondary text-decoration-none">Faqs</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">Terms & Condition</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Proxy</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="../menna_part/Final_project/Html/About.html" class="text-secondary text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="../Ali_part/shopping-cart.html" class="text-secondary text-decoration-none">Shop</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">Product</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Track Order</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Categories</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Fruit & Vegetables</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Meat & Fish</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Bread & Bakery</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Beauty & Health</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="text-secondary mb-3 mb-md-0">
+            Ecobazar eCommerce © 2021. All Rights Reserved
+          </p>
+
+          <div class="d-flex gap-2">
+            <img src="/images/apple-pay.png" width="45" alt="" />
+            <img src="images/visa.png" width="45" alt="" />
+            <img src="images/discover.png" width="45" alt="" />
+            <img src="images/mastercard.png" width="45" alt="" />
+            <img src="images/secure-payment.png" width="55" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/loginandregister.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>

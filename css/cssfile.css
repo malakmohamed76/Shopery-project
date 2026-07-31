@@ -1,0 +1,1953 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row {
+    display: block;
+}
+
+.input-group {
+    flex-direction: column !important;
+}
+
+
+
+.top-header{
+    background-color: #333333;
+    padding: 12px 0;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.left-side img{
+    width: 16px;
+}
+
+.left-side span{
+    color: #B3B3B3;
+    font-size: 12px;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.right-side img{
+    display: block;
+}
+
+.separator{
+    color: #808080;
+    font-size: 16px;
+}
+
+.right-side a{
+    text-decoration: none;
+    color: #B3B3B3;
+    font-size: 12px;
+}
+
+.right-side a:hover{
+    color: white;
+}
+
+
+.main-header{
+    padding: 24px 0;
+}
+
+.logo img{
+    display: block;
+}
+.search-box{
+    width: 600px;
+}
+
+.search-box form{
+    display: flex;
+}
+
+.search-input{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-right: none;
+    height: 45px;
+    padding: 0 15px;
+}
+
+.search-input img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.search-input input{
+    flex: 1;
+    border: none !important;
+    outline: none;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+.search-box .btn{
+    width: 120px;
+    height: 45px;
+}
+
+   
+.main-header{
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.navbar-section{
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 0;
+    margin-right: -20px;
+}
+
+.wishlist img{
+    width: 32px;
+    cursor: pointer;
+}
+
+.line{
+    width: 1px;
+    height: 24px;
+    background-color: #CCCCCC;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-icon{
+    position: relative;
+}
+
+.cart-icon img{
+    width: 34px;
+}
+
+.cart-badge{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 18px;
+    height: 18px;
+    background-color: #1fa823;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+
+.cart-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-text span{
+    font-size: 11px;
+    color: #4D4D4D;
+    line-height: 1.2;
+}
+
+.cart-text h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0;
+}
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar-section{
+    background-color: #fff;
+    padding: 16px 0;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a{
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-links a.active{
+    color: #1adb21;
+    font-weight: 600;
+}
+.nav-links a.active i{
+    color: #1ce022;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: #2C742F;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone img{
+    width: 24px;
+    display: block;
+}
+
+.phone span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+.hero-section{
+    width: 100%;
+}
+
+.hero-img{
+    width: 100%;
+    display: block;
+}
+
+/* ==================== Reset & General Setup ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+/* Container*/
+.container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* ==================== Filter Section ==================== */
+.filter-section {
+    width: 100%;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.filter-right {
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    margin-left: auto;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.sort-by select {
+    padding: 8px 12px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 13px;
+    color: #4D4D4D;
+    cursor: pointer;
+    outline: none;
+}
+
+.results-count {
+    font-size: 14px;
+    color: #666666;
+    white-space: nowrap;
+}
+
+.results-count span {
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+/* ==================== Blog Main & Sidebar Layout ==================== */
+.blog-main-section {
+    width: 100%;
+}
+
+.blog-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* Sidebar Setup */
+.sidebar {
+    width: 312px;
+    flex-shrink: 0;
+}
+
+.sidebar-widget {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.sidebar-widget:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.widget-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 16px;
+}
+
+/* 1. Search Box */
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    height: 45px;
+    padding: 12px 16px 12px 44px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input-wrapper .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+/* 2. Top Categories */
+
+.categories-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.categories-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 14px;
+    width: 100%;
+}
+/* ================= Popular Tags ================= */
+.tags-cloud {
+    display: grid ;
+    grid-template-columns: repeat(4, auto) ;
+    gap: 10px 6px ;
+    padding: 0 ;
+    margin: 0 ;
+    width: 100% ;
+    justify-content: start ;
+}
+
+.tags-cloud a {
+    display: inline-flex ;
+    align-items: center ;
+    justify-content: center ;
+    padding: 6px 10px;
+    background-color: #F2F2F2 ;
+    border-radius: 30px ;
+    text-decoration: none ;
+    color: #1A1A1A ;
+    font-size: 13px ; 
+    line-height: 1 ;
+    white-space: nowrap ;
+    transition: all 0.2s ease ;
+}
+
+.tags-cloud a.active,
+.tags-cloud a:hover {
+    background-color: #00B207 ;
+    color: #FFFFFF ;
+}
+/* ================= Our Gallery ================= */
+.gallery-grid {
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr) ; 
+    gap: 8px ;
+    width: 100% ;
+    margin-top: 12px ;
+}
+
+.gallery-grid img {
+    width: 100% ;
+    aspect-ratio: 1 / 1 ; 
+    object-fit: cover ; 
+    border-radius: 8px ;
+    display: block ;
+}
+
+
+.gallery-widget {
+    border-bottom: 1px solid #E6E6E6 ;
+    padding-bottom: 24px ;
+    margin-bottom: 24px ;
+}
+/* ================= Recently Added Perfect Alignment ================= */
+.recent-posts {
+    display: flex ;
+    flex-direction: column ;
+    gap: 16px ;
+    padding: 0 ;
+    margin: 0 ;
+    width: 100% ;
+}
+
+.recent-post-card {
+    display: flex ;
+    align-items: center ;
+    gap: 12px ;
+    text-decoration: none ;
+    width: 100% ;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+.recent-post-card img {
+    width: 90px ;
+    height: 70px ;
+    border-radius: 6px ;
+    object-fit: cover ;
+    flex-shrink: 0 ;
+    display: block ;
+}
+
+.recent-post-info {
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+}
+
+
+.recent-post-info h4 {
+    font-size: 14px ;
+    font-weight: 400 ;
+    color: #1A1A1A ;
+    line-height: 1.3 ;
+    margin: 0 0 6px 0 ;
+    display: -webkit-box ;
+    -webkit-line-clamp: 2 ;
+    -webkit-box-orient: vertical ;
+    overflow: hidden ;
+}
+
+.recent-post-card:hover .recent-post-info h4 {
+    color: #00B207 ;
+}
+
+
+.recent-post-info .post-date {
+    display: flex ;
+    align-items: center ;
+    gap: 6px ;
+    font-size: 13px ;
+    color: #808080 ;
+ }
+
+
+.recent-post-info .post-date i {
+    color: #00B207 ;
+    font-size: 13px ;
+}
+
+.blog-layout {
+    display: flex !important;
+    gap: 24px !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+}
+
+aside.sidebar {
+    width: 312px !important;
+    flex-shrink: 0 !important;
+}
+
+main.blog-content {
+    flex: 1 !important;
+    width: auto !important;
+}
+
+main.blog-content .blog-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+}
+
+main.blog-content .blog-card-image {
+    width: 100% !important;
+    height: 324px !important;
+}
+
+main.blog-content .blog-card-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+/* 1. جعل الكارت نفسه Position Relative لضبط مكان التاريخ */
+.blog-card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: #ffffff !important;
+    border: 1px solid #E6E6E6 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+/* 2. ضبط مكان الـ Date Badge فوق الصورة من تحت الشمال */
+.blog-card .blog-card-image {
+    position: relative !important;
+    width: 100% !important;
+    height: 324px !important;
+}
+
+.blog-card .date-badge {
+    position: absolute !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    z-index: 5 !important;
+    background: #FFFFFF !important;
+    padding: 8px 14px !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.blog-card .date-badge .day {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #1A1A1A !important;
+    line-height: 1 !important;
+}
+
+.blog-card .date-badge .month {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #808080 !important;
+    text-transform: uppercase !important;
+}
+
+/* 3. ترتيب محتوى الكلام تحت الصورة عشان متتداخلش */
+.blog-card-content {
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.blog-meta {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    font-size: 14px !important;
+    color: #666666 !important;
+    margin: 0 !important;
+}
+
+.blog-title {
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+}
+
+.blog-title a {
+    color: #1A1A1A !important;
+    text-decoration: none !important;
+}
+
+.read-more {
+    margin-top: 4px !important;
+    color: #00B207 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+/* الكارت الثاني العادي يكون لونه أسود عادي */
+.blog-card .blog-title a {
+    color: #1A1A1A !important;
+}
+
+/* الكارت الثاني المحدد (Active) يتحول العنوان للون الأخضر */
+.blog-card.active .blog-title a {
+    color: #2C742F !important; /* الأخضر المظبوط الخاص بـ Shopery */
+}
+/* 1. إرجاع خلفية الكارت كاملة باللون الأبيض */
+.blog-card,
+.blog-card-content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* 2. ضبط أبعاد ومسافات النص الداخلي للكارت */
+.blog-card-content {
+    padding: 20px 24px 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+/* 3. ضبط شريط الـ Meta (الأيقونات) */
+.blog-meta {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    font-size: 14px !important;
+    color: #666666 !important;
+    margin-bottom: 12px !important;
+}
+
+/* 4. ضبط العنوان عشان يطابق الفيجما بالظبط */
+.blog-title {
+    margin: 0 0 16px 0 !important;
+    font-size: 18px !important;       /* نفس حجم خط الفيجما */
+    font-weight: 500 !important;       /* Medium */
+    line-height: 1.45 !important;      /* ارتفاع السطر لخروج 3 سطور مضبوطة */
+    text-align: left !important;
+}
+
+/* لون العنوان للكارت الثاني */
+.blog-card.active .blog-title a,
+.blog-card:nth-child(2) .blog-title a {
+    color: #2C742F !important;       /* اللون الأخضر الغامق */
+}
+
+/* لون العنوان لباقي الكروت */
+.blog-card .blog-title a {
+    color: #1A1A1A !important;
+    text-decoration: none !important;
+}
+
+/* 5. زرار Read More */
+.read-more {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #00B207 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+}
+/* ضبط العرض وكسرة السطر للعنوان ليكون مطابق لفيجما بالظبط */
+.blog-title {
+    max-width: 360px !important;       /* يجبر كلمة accumsan تنزل السطر التاني */
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1.45 !important;
+    margin: 8px 0 16px 0 !important;
+}
+
+.blog-title a {
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+/* توسيط زرار التشغيل جوة صورة الكارت */
+.blog-card-image {
+    position: relative !important;
+}
+
+.play-btn {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important; /* للضبط في المنتصف تماماً */
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #ffffff !important;
+    border: none !important;
+    border-radius: 50% !important; /* عمل شكل دائري */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15) !important;
+    z-index: 10 !important;
+    transition: transform 0.2s ease, background-color 0.2s ease !important;
+}
+
+
+.play-btn i {
+    color: #00B207;  
+    font-size: 24px ;
+    margin-left: 2px ; 
+}
+
+/* تأثير بسيط عند الوقوف بالماوس على الزرار */
+.play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1) !important;
+    background-color: #00B207 !important;
+}
+
+.play-btn:hover i {
+    color: #ffffff !important;
+}
+/* --- Pagination Styles --- */
+
+.pagination-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: fit-content !important; /* تجعل العرض على قد الأرقام فقط */
+    margin: 40px auto 60px auto !important; /* توسيط تلقائي */
+    transform: translateX(230px) !important; /* تحريك الشريط نفسه يمين */
+}
+.page-number, .page-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.page-number.active {
+    background-color: #00B207 !important;
+    color: #ffffff !important;
+}
+
+.page-number:hover:not(.active), .page-arrow:hover:not(.disabled) {
+    background-color: #F2F2F2;
+    color: #1A1A1A;
+}
+
+.page-arrow.disabled {
+    color: #CCCCCC;
+    cursor: not-allowed;
+}
+
+.page-dots {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* --- Newsletter Bar Styles --- */
+.newsletter-section {
+    background-color: #F7F7F7;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.newsletter-form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 46px;
+    padding: 6px 6px 6px 24px;
+    width: 100%;
+    max-width: 536px;
+}
+
+.newsletter-form input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #1A1A1A;
+    width: 100%;
+    background: transparent;
+}
+
+.newsletter-form input::placeholder {
+    color: #808080;
+}
+
+.btn-subscribe {
+    background-color: #00B207;
+    color: #FFFFFF;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 43px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.btn-subscribe:hover {
+    background-color: #2C742F;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.social-icon.facebook {
+    background-color: #00B207; /* أو الألوان الخضراء المطلوبة بالتصمبم */
+    color: #FFFFFF;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+.newsletter-section {
+    width: 100% !important;
+    background-color: #F7F7F7 !important;
+    padding: 40px 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. الحاوية الداخلية موزعة على أطراف الصفحة */
+.newsletter-section .newsletter-container {
+    width: 100% !important;
+    max-width: 1320px !important; /* نفس عرض كروت البلوج والفوتر */
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* بيزق النص لأقصى الشمال والفروم لأقصى اليمين */
+    box-sizing: border-box !important;
+}
+
+/* 3. الجزء الخاص بالنص (جهة الشمال) */
+.newsletter-section .newsletter-info {
+    flex: 1 !important;
+    max-width: 440px !important;
+}
+.newsletter-section .newsletter-info h2 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: #1A1A1A !important;
+    margin-bottom: 8px !important;
+    white-space: nowrap !important; /* السطر ده بيمنع العنوان إنه ينزل تحت بعضه */
+}
+
+.newsletter-section .newsletter-info p {
+    font-size: 14px !important;
+    color: #808080 !important;
+    margin: 0 !important;
+    max-width: 450px !important;
+    line-height: 1.5 !important;
+}
+
+/* 4. الجزء الخاص بالفورم والأيقونات (مجهّز للتزحزح لأقصى اليمين) */
+.newsletter-section .newsletter-form-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important; /* يجبر المحتوى على الذهاب لليمين */
+    gap: 16px !important;
+    margin-left: auto !important; /* يدفع الحاوية بالكامل لليمين */
+}
+
+/* 5. شكل حقل الإيميل الطويل */
+.newsletter-section .newsletter-form {
+    display: flex !important;
+    align-items: center !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E6E6E6 !important;
+    border-radius: 46px !important;
+    padding: 4px 4px 4px 20px !important;
+    width: 550px !important; /* عرض الحقل */
+}
+
+.newsletter-section .newsletter-form input {
+    border: none !important;
+    outline: none !important;
+    width: 100% !important;
+    font-size: 14px !important;
+    background: transparent !important;
+}
+
+.newsletter-section .btn-subscribe {
+    background-color: #00B207 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    padding: 12px 28px !important;
+    border-radius: 43px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+}
+/* تنسيق أيقونات السوشيال ميديا كصور من الفيجما */
+.social-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.social-links .social-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-decoration: none !important;
+    transition: transform 0.2s ease !important;
+}
+
+.social-links .social-icon img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+.social-links .social-icon:hover {
+    transform: translateY(-2px) !important;
+}
+/* --- Main Footer Section --- */
+.main-footer {
+    background-color: #1A1A1A !important;
+    color: #999999 !important;
+    padding-top: 60px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+}
+
+.footer-container {
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding: 0 15px 50px 15px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.footer-col h4 {
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 20px !important;
+}
+
+.footer-col ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px !important;
+}
+
+.footer-col ul li a {
+    color: #999999 !important;
+    text-decoration: none !important;
+}
+
+.brand-col {
+    max-width: 330px !important;
+}
+
+.footer-logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #FFFFFF !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+}
+
+.logo-icon {
+    color: #00B207 !important;
+}
+
+.brand-desc {
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
+    color: #808080 !important;
+}
+
+.footer-contact {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.contact-link {
+    color: #FFFFFF !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333333 !important;
+    padding: 24px 0 !important;
+}
+.footer-bottom-container {
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+/* إصلاح ألوان حقل الإيميل والنص في الـ Newsletter */
+.newsletter-section {
+    background-color: #F7F7F7 !important; /* خلفية السكشن رمادي فاتح */
+}
+
+/* 1. إظهار النص الرمادي تحت العنوان */
+.newsletter-section .newsletter-info p {
+    color: #808080 !important; /* لون رمادي واضح بدلاً من الباهت */
+    display: block !important;
+    font-size: 14px !important;
+    margin-top: 6px !important;
+}
+
+/* 2. إظهار الإطار الأبيض والحدود حول حقل الإيميل */
+.newsletter-section .newsletter-form {
+    background-color: #FFFFFF !important; /* خلفية بيضاء للحقل */
+    border: 1px solid #E6E6E6 !important; /* حدود رمادية فاتحة */
+    border-radius: 46px !important;
+    padding: 4px 4px 4px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.newsletter-section .newsletter-form input {
+    color: #1A1A1A !important;
+}
+
+.newsletter-section .newsletter-form input::placeholder {
+    color: #999999 !important; /* لون كلمة Your email address */
+}
+/* ==========================================
+   تعديل الألوان والخطوط لتطابق الفيجما 100%
+   ========================================== */
+
+/* 1. إظهار نص الـ Newsletter الرمادي والعنوان باللون الأسود */
+.newsletter-section h2,
+.newsletter-info h2 {
+    color: #1A1A1A !important;
+}
+
+.newsletter-section p,
+.newsletter-info p {
+    color: #808080 !important; /* لون رمادي واضح بدلاً من الباهت */
+}
+
+/* 2. إظهار الخلفية البيضاء والحدود لحقل الإيميل */
+.newsletter-form {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E6E6E6 !important;
+    border-radius: 46px !important;
+}
+
+.newsletter-form input {
+    color: #1A1A1A !important;
+}
+
+.newsletter-form input::placeholder {
+    color: #999999 !important;
+}
+
+/* 3. كلمة Ecobazar تكون باللون الأبيض الناصع */
+.main-footer .footer-logo,
+.main-footer .logo-text,
+.footer-logo span {
+    color: #FFFFFF !important;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+}
+
+/* 4. الخط الأخضر تحت أرقام التليفون والإيميل */
+.main-footer .contact-link,
+.footer-contact a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid #20B526 !important; /* خط أخضر ناصع زي الفيجما */
+    padding-bottom: 2px !important;
+    font-weight: 500 !important;
+}
+
+.main-footer .contact-link:hover,
+.footer-contact a:hover {
+    color: #20B526 !important;
+}
+
+.main-footer .or-text,
+.footer-contact span {
+    color: #808080 !important;
+}
+
+/* 5. ضبط ألوان القوائم والفقرة في الفوتر */
+.main-footer .brand-desc {
+    color: #808080 !important;
+}
+
+.main-footer .footer-col h4 {
+    color: #FFFFFF !important;
+}
+
+.main-footer .footer-col ul li a {
+    color: #999999 !important;
+}
+
+.main-footer .footer-col ul li a:hover,
+.main-footer .footer-col ul li a.active {
+    color: #FFFFFF !important;
+}
+
+.main-footer .copyright {
+    color: #808080 !important;
+}
+/* Order Details Content Box */
+.order-details-content {
+    flex: 1;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 24px;
+    background: #ffffff;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.order-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.order-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.order-title .dot {
+    color: #CCCCCC;
+}
+
+.order-title span {
+    font-size: 14px;
+    color: #666666;
+}
+
+.back-link {
+    color: #00B207;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Info Cards Grid */
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.info-card {
+    padding: 20px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.info-card:last-child {
+    border-right: none;
+}
+
+.card-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #999999;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.info-card .name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 6px;
+}
+
+.info-card .address {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.contact-group {
+    margin-bottom: 8px;
+}
+
+.contact-group .label {
+    font-size: 10px;
+    color: #999999;
+    display: block;
+}
+
+.contact-group p {
+    font-size: 13px;
+    color: #333333;
+}
+
+/* Summary Card */
+.summary-card .meta-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.summary-card .label {
+    font-size: 10px;
+    color: #999999;
+    display: block;
+}
+
+.summary-card .val {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.summary-card .divider {
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 10px 0;
+}
+
+.summary-card .summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.summary-card .total-row {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.summary-card .total-price {
+    color: #2C742F;
+    font-size: 16px;
+}
+
+/* Tracker */
+.order-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0 40px 0;
+    padding: 0 10px;
+}
+
+.tracker-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.step-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px dashed #cccccc;
+    background-color: #ffffff;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.tracker-step.completed .step-icon {
+    background-color: #00B207;
+    border-color: #00B207;
+    color: #ffffff;
+}
+
+.tracker-step.current .step-icon {
+    background-color: #00B207;
+    border: 2px solid #00B207;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tracker-step span {
+    font-size: 12px;
+    color: #666666;
+}
+
+.tracker-step.completed span,
+.tracker-step.current span {
+    color: #2C742F;
+    font-weight: 500;
+}
+
+.step-img {
+    width: 16px;
+    height: 16px;
+}
+
+.tracker-line {
+    flex: 1;
+    height: 5px;
+    background-color: #e6e6e6;
+    margin: 0 -5px;
+    transform: translateY(-10px);
+}
+
+.tracker-line.completed {
+    background-color: #00B207;
+}
+
+/* Products Table */
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table th {
+    background-color: #f2f2f2;
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+.products-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #333333;
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-cell img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.subtotal-val {
+    font-weight: 500;
+    color: #1A1A1A;
+}
+.step-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.tracker-step.completed .step-icon {
+    background-color: #00B207;
+    border-color: #00B207;
+    color: #ffffff;
+}
+
+.tracker-step.current .step-icon {
+    background-color: #00B207;
+    border: 2px solid #00B207;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tracker-step span {
+    font-size: 12px;
+    color: #666666;
+}
+
+.tracker-step.completed span,
+.tracker-step.current span {
+    color: #2C742F;
+    font-weight: 500;
+}
+
+.tracker-line {
+    flex: 1;
+    height: 4px;
+    background-color: #E6E6E6;
+    margin: 0 -10px;
+    transform: translateY(-12px);
+    z-index: 1;
+}
+
+.tracker-line.completed {
+    background-color: #00B207;
+}
+
+/* Table Section */
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table th {
+    background-color: #F2F2F2;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 500;
+    color: #4D4D4D;
+    letter-spacing: 0.5px;
+}
+
+.products-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 14px;
+    color: #333333;
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-cell img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.subtotal-val {
+    font-weight: 500;
+    color: #1A1A1A;
+}
+/* Sidebar Container Box */
+.sidebar-nav {
+    width: 280px;
+    flex-shrink: 0;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Navigation Table Structure */
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.nav-table th {
+    padding: 20px 24px 12px 24px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    border: none;
+    background: transparent;
+}
+
+.nav-table td {
+    padding: 0;
+    border: none;
+}
+
+/* Navigation Links Style */
+.nav-link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: #666666;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link-item i {
+    font-size: 18px;
+}
+
+/* Hover State */
+.nav-table tr:hover:not(.active) {
+    background-color: #F9F9F9;
+}
+
+/* Active Row State (Order History) */
+.nav-table tr.active {
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+.nav-table tr.active td {
+    border-left: 3px solid #2C742F; /* Green Indicator Bar */
+}
+
+.nav-table tr.active .nav-link-item {
+    color: #1A1A1A;
+    font-weight: 500;
+}
+/* الحاوية الرئيسية لجعلهم بجانب بعض وتحديد المسافة من الأعلى */
+.account-wrapper {
+    display: flex; /* بيخليهم جنب بعض أفقياً */
+    gap: 24px; /* المسافة بين السايدبار والمحتوى */
+    margin-top: 32px; /* مسافة صغيرة ومظبوطة بين الجزء ده وبين الصورة اللي فوق */
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+/* السايدبار بعرض ثابت */
+.sidebar-nav {
+    width: 280px;
+    flex-shrink: 0;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* باقي المحتوى ياخد المساحة المتبقية على اليمين */
+.order-details-content {
+    flex: 1;
+}
+
+/* تنسيق جدول الـ Navigation */
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav-table th {
+    padding: 20px 24px 12px 24px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    border: none;
+}
+
+.nav-table td {
+    padding: 0;
+    border: none;
+}
+
+.nav-link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: #666666;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-table tr.active {
+    background-color: #F2F2F2;
+}
+
+.nav-table tr.active td {
+    border-left: 3px solid #2C742F;
+}
+
+.nav-table tr.active .nav-link-item {
+    color: #1A1A1A;
+    font-weight: 500;
+}
+/* الحاوية الرئيسية لجعل السايدبار والمحتوى جنب بعض */
+.account-container {
+    display: flex !important; /* بيخليهم جنب بعض أفقياً */
+    flex-direction: row;
+    gap: 24px; /* المسافة بين القائمة الجانبية والمحتوى */
+    margin-top: 32px; /* المسافة بين السكشن والصورة اللي فوق */
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+/* تحديد عرض السايدبار */
+.sidebar-nav {
+    width: 280px;
+    flex-shrink: 0; /* منع انكماش القائمة */
+}
+
+/* جعل باقي المحتوى يتمدد في المساحة المتبقية */
+.order-details-content {
+    flex: 1;
+}
+.account-page{
+    padding:60px 0;
+    background:#fff;
+}
+
+.account-box,
+.billing-box{
+    border:1px solid #E6E6E6;
+    border-radius:8px;
+    padding:32px;
+    margin-bottom:24px;
+    background:#fff;
+}
+
+.account-box h2,
+.billing-box h2{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:30px;
+    color:#1A1A1A;
+}
+
+.account-content{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.account-form{
+    width:65%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.form-input-group{
+    width:calc(50% - 10px);
+    display:flex;
+    flex-direction:column;
+}
+
+.form-input-group.full{
+    width:100%;
+}
+
+.form-input-group label{
+    font-size:14px;
+    color:#1A1A1A;
+    margin-bottom:8px;
+}
+
+.form-input-group input,
+.form-input-group select{
+    height:48px;
+    border:1px solid #E6E6E6;
+    border-radius:6px;
+    padding:0 16px;
+    font-size:15px;
+    outline:none;
+    background:#fff;
+}
+
+.form-input-group input:focus,
+.form-input-group select:focus{
+    border-color:#00B207;
+}
+
+.profile-image{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.profile-image img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.choose-btn{
+    width:170px;
+    height:48px;
+    background:#fff;
+    border:2px solid #00B207;
+    color:#00B207;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.choose-btn:hover{
+    background:#00B207;
+    color:#fff;
+}
+
+.save-btn{
+    width:170px;
+    height:50px;
+    background:#00B207;
+    border:none;
+    border-radius:30px;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#2C742F;
+}
+
+.billing-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.row .form-input-group{
+    flex:1;
+}
+
+@media(max-width:992px){
+
+    .account-content{
+        flex-direction:column;
+    }
+
+    .account-form,
+    .profile-image{
+        width:100%;
+    }
+
+    .profile-image{
+        margin-top:20px;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .form-input-group{
+        width:100%;
+    }
+    .full{
+        width: 100%;
+    }
+}
+ .change-password-box{
+    margin-top:24px;
+    padding:32px;
+    border:1px solid #E6E6E6;
+    border-radius:8px;
+    background:#fff;
+}
+
+.change-password-box h2{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:24px;
+    color:#1A1A1A;
+}
+
+.change-password-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.change-password-form .row{
+    display:flex;
+    gap:24px;
+}
+
+.change-password-form .form-input-group{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.password-field{
+    position:relative;
+}
+
+.password-field input{
+    width:100%;
+    height:48px;
+    border:1px solid #E6E6E6;
+    border-radius:6px;
+    padding:0 45px 0 15px;
+    outline:none;
+}
+
+.password-field i{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#808080;
+    cursor:pointer;
+}
+.sidebar-nav{
+    width: 312px;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.nav-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav-table th{
+    text-align: left;
+    padding: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.nav-table td{
+    padding: 0;
+}
+
+.nav-table a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-table a:hover{
+    background: #F2F2F2;
+    color: #1A1A1A;
+}
+
+.nav-table tr.active a{
+    background: #F2F2F2;
+    border-left: 4px solid #00B207;
+    color: #1A1A1A;
+    font-weight: 600;
+}
+
+.nav-table i{
+    font-size: 20px;
+    color: #808080;
+}
+
+.nav-table tr.active i{
+    color: #00B207;
+}

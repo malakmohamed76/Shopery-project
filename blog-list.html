@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog List</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cssfile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div class="left-side">
+                    <img src="images/Map Pin.svg" alt="">
+                    <span>Store Location: Lincoln-344, Illinois, Chicago, USA</span>
+                </div>
+
+                <div class="right-side">
+                    <img src="images/ENG.svg" alt="">
+                    <img src="images/USD.svg" alt="">
+                    <span class="separator">|</span>
+                    <a href="#">Sign In / Sign Up</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="images/Logo.svg" alt="">
+                </div>
+
+                <!-- Search -->
+                <div class="search-box">
+    <form class="d-flex">
+
+        <div class="search-input">
+            <img src="images/Group.svg" alt="search">
+
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Search">
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            Search
+        </button>
+
+    </form>
+</div>
+
+                <!-- Header Icons -->
+                <div class="header-icons d-flex align-items-center">
+
+                    <div class="wishlist">
+                        <img src="images/Heart.svg" alt="">
+                    </div>
+
+                    <span class="line"></span>
+
+                    <div class="cart d-flex align-items-center">
+
+                        <div class="cart-icon">
+                            <img src="images/Rectangle.png" alt="">
+                            <span class="cart-badge">2</span>
+                        </div>
+
+                        <div class="cart-text">
+                            <span class="cart-title">Shopping cart:</span>
+                            <span class="cart-price">$57.00</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar-section">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+               <ul class="nav-links">
+                   <li><a class="active" href="index.html">Home <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="shop.html">Shop <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="whislist.html">Pages <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="blog-list.html">Blog <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="About.html">About Us</a></li>
+                   <li><a href="Contact.html">Contact Us</a></li>
+               </ul>
+
+                <div class="phone">
+                    <img src="images/PhoneCall 1.svg" alt="">
+                    <span>(219) 555-0114</span>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- Hero Section -->
+<section class="hero-section">
+
+    <img src="images/Breadcrumbs.png" alt="Breadcrumb" class="hero-img">
+
+</section>
+
+<section class="filter-section">
+    <div class="container">
+        <div class="filter-bar">
+            <button class="filter-btn" type="button">
+                <img src="images/Button.svg" alt="Filter">
+            </button>
+
+            <div class="filter-right">
+                <div class="sort-by">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" name="sort">
+                        <option value="latest">Latest</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                </div>
+                <p class="results-count">
+                    <span>52</span> Results Found
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-main-section">
+    <div class="container">
+        
+        
+        <div class="blog-layout">
+
+            
+            <aside class="sidebar">
+
+               
+                
+                <!-- Search Box
+                <div class="sidebar-widget search-widget">
+                    <div class="search-input-wrapper">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div> -->
+
+                <!-- Top Categories -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Top Categories</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Fresh Fruit <span>(134)</span></a></li>
+                        <li><a href="#">Vegetables <span>(150)</span></a></li>
+                        <li><a href="#">Cooking <span>(54)</span></a></li>
+                        <li><a href="#">Snacks <span>(47)</span></a></li>
+                        <li><a href="#">Beverages <span>(43)</span></a></li>
+                        <li><a href="#">Beauty & Health <span>(38)</span></a></li>
+                        <li><a href="#">Bread & Bakery <span>(15)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tag -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Popular Tag</h3>
+                    <div class="tags-cloud">
+                        <a href="#">Healthy</a>
+                        <a href="#" class="active">Low fat</a>
+                        <a href="#">Vegetarian</a>
+                        <a href="#">Bread</a>
+                        <a href="#">Kid foods</a>
+                        <a href="#">Vitamins</a>
+                        <a href="#">Snacks</a>
+                        <a href="#">Tiffin</a>
+                        <a href="#">Meat</a>
+                        <a href="#">Launch</a>
+                        <a href="#">Dinner</a>
+                    </div>
+                </div>
+
+                <!-- Our Gallery -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Our Gallery</h3>
+                    <div class="gallery-grid">
+                        <img src="images/e6e5605a8a3afdcf3eb92e1f095b381e937d80a2.jpg" alt="Gallery 1">
+                        <img src="images/b5fa72efda197619fffa7a0c52eb26486fb7ab76.jpg" alt="Gallery 2">
+                        <img src="images/d326c4073180a43d609ee88bd2711dc24c4acd91.jpg" alt="Gallery 3">
+                        <img src="images/401b95bd2008c77c10030f04e796e24e05add6a7.jpg" alt="Gallery 4">
+                        <img src="images/7969f0743f5f830464d05466530a6e76cc1e0e1b.jpg" alt="Gallery 5">
+                        <img src="images/b34f9ba1c75adda9c5ba665a80866379814947b4.jpg" alt="Gallery 6">
+                        <img src="images/44bed5e1a01a87193e61ebc3e01735a8be3af303.jpg" alt="Gallery 7">
+                        <img src="images/8fdf0950b95680a84dfc0bc89a36a76791d1ebff.jpg" alt="Gallery 8">
+                    </div>
+                </div>
+
+                <!-- Recently Added -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recently Added</h3>
+                    <div class="recent-posts">
+                        
+                        <a href="#" class="recent-post-card">
+                            <img src="images/80be3052905f58da3658afe807c0e045f7d38078.jpg" alt="Post Thumb">
+                            <div class="recent-post-info">
+                                <h4>Curabitur porttitor orci eget nequ accumsan.</h4>
+                                <div class="post-date">
+                                    <i class="bi bi-calendar4-week"></i>
+                                    <span>Apr 25, 2021</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="recent-post-card">
+                            <img src="images/44bed5e1a01a87193e61ebc3e01735a8be3af303 (1).jpg" alt="Post Thumb">
+                            <div class="recent-post-info">
+                                <h4>Donec mattis arcu faucibus suscipit viverra</h4>
+                                <div class="post-date">
+                                    <i class="bi bi-calendar4-week"></i>
+                                    <span>Apr 25, 2021</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="recent-post-card">
+                            <img src="images/834764b6b7d99cc24ef6565ee4c1ad41c74ac762.jpg" alt="Post Thumb">
+                            <div class="recent-post-info">
+                                <h4>Quisque posuere tempus rutrum. Integer velit ex.</h4>
+                                <div class="post-date">
+                                    <i class="bi bi-calendar4-week"></i>
+                                    <span>Apr 25, 2021</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </aside> 
+
+            
+            <main class="blog-content">
+                <div class="blog-grid">
+
+                    <!-- Card 1 -->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (2).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="blog-card active">
+                        <div class="blog-card-image">
+                            <img src="images/Image (3).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (4).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (5).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                            <button class="play-btn">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--Card 5--> 
+                     <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (6).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                            
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--Card 6-->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (7).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                          
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--Card 7-->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (8).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                          
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--Card 8-->
+                     <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (9).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                           
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--Card 9-->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (10).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                           
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--Card 10-->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/Image (11).svg" alt="Blog Image">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                          
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-tag"></i> Food</span>
+                                <span><i class="bi bi-person"></i> By Admin</span>
+                                <span><i class="bi bi-chat-dots"></i> 65 Comments</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="#">Curabitur porttitor orci eget neque<br> accumsan venenatis. Nunc fermentum.</a>
+                            </h3>
+                            <a href="#" class="read-more">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Pagination Wrapper -->
+<div class="pagination-wrapper">
+    <button class="page-arrow disabled" aria-label="Previous">
+        <i class="bi bi-chevron-left"></i>
+    </button>
+    <a href="#" class="page-number active">1</a>
+    <a href="#" class="page-number">2</a>
+    <a href="#" class="page-number">3</a>
+    <a href="#" class="page-number">4</a>
+    <a href="#" class="page-number">5</a>
+    <span class="page-dots">...</span>
+    <a href="#" class="page-number">21</a>
+    <button class="page-arrow" aria-label="Next">
+        <i class="bi bi-chevron-right"></i>
+    </button>
+</div>
+
+</main> 
+</div> 
+</div> 
+</section>
+
+<!-- Subcribe Newsletter Section -->
+<section class="newsletter-section">
+    <div class="container newsletter-container">
+        <div class="newsletter-info">
+            <h2>Subcribe our Newsletter</h2>
+            <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+        </div>
+        <div class="newsletter-form-wrapper">
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+            
+            <!-- أيقونات السوشيال ميديا كصور SVG/PNG -->
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <img src="images/Social Media.svg" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/Social Media (1).svg" alt="Twitter">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/Social Media (2).svg" alt="Pinterest">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="images/Social Media (3).svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Main Footer Section -->
+<footer class="main-footer">
+    <div class="container footer-container">
+        <!-- Brand Column -->
+        <div class="footer-col brand-col">
+            <div class="footer-logo">
+                <img src="images/Logo (1).svg" alt="Ecobazar Logo" class="logo-img">
+            </div>
+            <p class="brand-desc">
+                Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+            </p>
+            <div class="footer-contact">
+                <a href="tel:2195550114" class="contact-link">(219) 555-0114</a>
+                <span class="or-text">or</span>
+                <a href="mailto:Proxy@gmail.com" class="contact-link">Proxy@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="footer-col">
+            <h4>My Account</h4>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#" class="active">Shoping Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Helps</h4>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Proxy</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Track Order</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="#">Fruit & Vegetables</a></li>
+                <li><a href="#">Meat & Fish</a></li>
+                <li><a href="#">Bread & Bakery</a></li>
+                <li><a href="#">Beauty & Health</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+            <p class="copyright">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+            <div class="payment-methods">
+                <img src="images/Frame 142.svg" alt="Payment Methods" class="payment-img">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
+                    
+            
