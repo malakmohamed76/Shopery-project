@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Detail - Shopery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="css/cssfile.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Header -->
+        <div class="top-header">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="left-side">
+                        <img src="images/Map Pin.svg" alt="Map Pin">
+                        <span>Store Location: Lincoln-344, Illinois, Chicago, USA</span>
+                    </div>
+
+                    <div class="right-side">
+                        <img src="images/ENG.svg" alt="ENG">
+                        <img src="images/USD.svg" alt="USD">
+                        <span class="separator">|</span>
+                        <a href="#">Sign In / Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/Logo.svg" alt="Ecobazar Logo">
+                        </a>
+                    </div>
+
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <form class="d-flex">
+                            <div class="search-input">
+                                <img src="images/Group.svg" alt="search">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-success">Search</button>
+                        </form>
+                    </div>
+
+                    <!-- Header Icons -->
+                    <div class="header-icons d-flex align-items-center">
+                        <div class="wishlist">
+                            <img src="images/Heart.svg" alt="Wishlist">
+                        </div>
+
+                        <span class="line"></span>
+
+                        <div class="cart d-flex align-items-center">
+                            <div class="cart-icon">
+                                <img src="images/Rectangle.png" alt="Cart">
+                                <span class="cart-badge">2</span>
+                            </div>
+                            <div class="cart-text">
+                                <span class="cart-title">Shopping cart:</span>
+                                <span class="cart-price">$57.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar-section">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                   
+               <ul class="nav-links">
+                   <li><a class="active" href="index.html">Home <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="shop.html">Shop <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="whislist.html">Pages <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="blog-list.html">Blog <i class="bi bi-chevron-down"></i></a></li>
+                   <li><a href="About.html">About Us</a></li>
+                   <li><a href="Contact.html">Contact Us</a></li>
+               </ul>
+                    <div class="phone">
+                        <img src="images/PhoneCall 1.svg" alt="Phone">
+                        <span>(219) 555-0114</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="images/Breadcrumbs.svg" alt="Breadcrumb" class="hero-img">
+    </section>
+    <!-- Account & Order Details Section -->
+<div class="account-wrapper container">
+    
+    <!-- Navigation Sidebar Table -->
+<aside class="sidebar-nav">
+    <table class="nav-table">
+        <thead>
+            <tr>
+                <th>Navigation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="#" class="nav-link-item">
+                        <i class="bi bi-grid-1x2"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </td>
+            </tr>
+            <!-- Active Item (Order History) -->
+            <tr class="active">
+                <td>
+                    <a href="#" class="nav-link-item">
+                        <i class="bi bi-clock-history"></i>
+                        <span>Order History</span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="nav-link-item">
+                        <i class="bi bi-heart"></i>
+                        <span>Wishlist</span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="nav-link-item">
+                        <i class="bi bi-bag"></i>
+                        <span>Shopping Cart</span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="nav-link-item">
+                        <i class="bi bi-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="nav-link-item">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Log-out</span>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</aside>
+
+
+    <!-- Main Order Details Box -->
+    <main class="order-details-content">
+        
+        <!-- Order Header -->
+        <div class="order-header d-flex justify-content-between align-items-center">
+            <div class="order-title d-flex align-items-center gap-2">
+                <h2>Order Details</h2>
+                <span class="dot">•</span>
+                <span class="order-date">April 24, 2021</span>
+                <span class="dot">•</span>
+                <span class="order-count">3 Products</span>
+            </div>
+            <a href="#" class="back-link">Back to List</a>
+        </div>
+
+        <!-- Info Cards Grid -->
+        <div class="info-cards-grid">
+            
+            <!-- Billing Address -->
+            <div class="info-card">
+                <span class="card-label">BILLING ADDRESS</span>
+                <p class="name">Dainne Russell</p>
+                <p class="address">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                <div class="contact-group">
+                    <span class="label">EMAIL</span>
+                    <p class="value">dainne.ressell@gmail.com</p>
+                </div>
+                <div class="contact-group">
+                    <span class="label">PHONE</span>
+                    <p class="value">(671) 555-0110</p>
+                </div>
+            </div>
+
+            <!-- Shipping Address -->
+            <div class="info-card">
+                <span class="card-label">SHIPPING ADDRESS</span>
+                <p class="name">Dainne Russell</p>
+                <p class="address">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                <div class="contact-group">
+                    <span class="label">EMAIL</span>
+                    <p class="value">dainne.ressell@gmail.com</p>
+                </div>
+                <div class="contact-group">
+                    <span class="label">PHONE</span>
+                    <p class="value">(671) 555-0110</p>
+                </div>
+            </div>
+
+            <!-- Summary Card -->
+            <div class="info-card summary-card">
+                <div class="meta-row">
+                    <div>
+                        <span class="label">ORDER ID:</span>
+                        <span class="val">#4152</span>
+                    </div>
+                    <div>
+                        <span class="label">PAYMENT METHOD:</span>
+                        <span class="val">Paypal</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span class="val">$365.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span class="val">20%</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span class="val">Free</span>
+                </div>
+                <div class="divider"></div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span class="total-price">$84.00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Order Progress Tracker -->
+        <div class="order-tracker">
+            <div class="tracker-step completed">
+                <div class="step-icon">
+                    <i class="bi bi-check-lg"></i>
+                </div>
+                <span>Order received</span>
+            </div>
+
+            <div class="tracker-line completed"></div>
+
+            <div class="tracker-step current">
+                <div class="step-icon">02</div>
+                <span>Processing</span>
+            </div>
+
+            <div class="tracker-line"></div>
+
+            <div class="tracker-step">
+                <div class="step-icon">03</div>
+                <span>On the way</span>
+            </div>
+
+            <div class="tracker-line"></div>
+
+            <div class="tracker-step">
+                <div class="step-icon">04</div>
+                <span>Delivered</span>
+            </div>
+        </div>
+
+        <!-- Products Table -->
+        <table class="products-table">
+            <thead>
+                <tr>
+                    <th>PRODUCT</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>SUBTOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="images/Image (16).svg" alt="Red Capsicum">
+                            <span>Red Capsicum</span>
+                        </div>
+                    </td>
+                    <td>$14.00</td>
+                    <td>x5</td>
+                    <td class="subtotal-val">$70.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="images/Image (15).svg" alt="Green Capsicum">
+                            <span>Green Capsicum</span>
+                        </div>
+                    </td>
+                    <td>$14.00</td>
+                    <td>x2</td>
+                    <td class="subtotal-val">$28.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="images/Image (14).svg" alt="Green Chili">
+                            <span>Green Chili</span>
+                        </div>
+                    </td>
+                    <td>$26.70</td>
+                    <td>x10</td>
+                    <td class="subtotal-val">$267.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</div>
+
+    
+           
+                       
+    <!-- Subscribe Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container newsletter-container">
+            <div class="newsletter-info">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+            </div>
+            <div class="newsletter-form-wrapper">
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your email address" required aria-label="Your email address">
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <img src="images/Social Media.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <img src="images/Social Media (1).svg" alt="Twitter">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Pinterest">
+                        <img src="images/Social Media (2).svg" alt="Pinterest">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="images/Social Media (3).svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/Logo (1).svg" alt="Ecobazar Logo" class="logo-img">
+                    </a>
+                </div>
+                <p class="brand-desc">
+                    Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+                </p>
+                <div class="footer-contact">
+                    <a href="tel:2195550114" class="contact-link">(219) 555-0114</a>
+                    <span class="or-text">or</span>
+                    <a href="mailto:Proxy@gmail.com" class="contact-link">Proxy@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Links Columns -->
+            <div class="footer-col">
+                <h4 class="footer-title">My Account</h4>
+                <ul class="footer-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#" class="active">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Helps</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Faqs</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Proxy</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Fruit & Vegetables</a></li>
+                    <li><a href="#">Meat & Fish</a></li>
+                    <li><a href="#">Bread & Bakery</a></li>
+                    <li><a href="#">Beauty & Health</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+                <div class="payment-methods">
+                    <img src="images/Frame 142.svg" alt="Payment Methods" class="payment-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

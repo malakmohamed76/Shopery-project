@@ -1,0 +1,364 @@
+/* Reset Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ ul {
+    
+    list-style: none;
+}
+  li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+ #user {
+    margin-right: 10px;
+ }
+
+/* ===================================
+   Header Section
+   =================================== */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    border-bottom: 1px solid lightgray;
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+}
+
+.top-header .right a {
+    text-decoration: none;
+    color: grey;
+}
+
+.usd {
+    border-right: 1px solid rgb(176, 174, 174);
+    padding-right: 20px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Main Row */
+.main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main-row .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-row .icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.main-row .icons .heart {
+    border-right: 2px solid lightgrey;
+    padding-right: 15px;
+}
+
+.main-row .icons span {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+/* Search Bar Formatting */
+.main-row .search {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-row .search input {
+    padding: 10px 15px 10px 40px;
+    border: 1px solid lightgray;
+    border-radius: 6px 0 0 6px;
+    width: 350px;
+    outline: none;
+}
+
+.main-row .search button {
+    padding: 10px 20px;
+    border: 1px solid #00B207;
+    border-radius: 0 6px 6px 0;
+    background-color: #00B207;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.main-row .search button:hover {
+    background-color: #008a05;
+}
+
+.main-row .search i {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.cart-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+
+/* ===================================
+   Navigation Bar
+   =================================== */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 60px;
+    margin-top: 25px;
+    padding: 0 10%;
+}
+
+.nav-bar .list ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.nav-bar .list li a {
+    color: #111010;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-bar .list li a:hover {
+    color: #2C742F;
+}
+
+.nav-bar .number {
+    color:#1A1A1A;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.nav-bar .number i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* ===================================
+   Breadcrumb Section
+   =================================== */
+.breadcrumb-section {
+    height: 120px;
+    width: 100%;
+}
+
+.breadcrumb-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.breadcrumb-img {
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(180deg);
+}
+
+.breadcrumb-overlay {
+    z-index: 10;
+}
+
+.breadcrumb-section .fa-house {
+    color: #979997;
+    font-size: 16px;
+}
+
+.breadcrumb-section .fa-chevron-right {
+    color: #999999;
+    font-size: 12px;
+}
+
+.breadcrumb-section span {
+    color: #00b207;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* ===================================
+   About Section
+   =================================== */
+.about h2 {
+    font-size: 40px;
+    color: #002603;
+}
+
+.about p {
+    line-height: 1.7;
+}
+
+
+.feature-icon {
+    background-color: #e7f6e8;
+    width: 60px;
+    height: 60px;
+    color: #00b207;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #002603;
+}
+
+/* ===================================
+   Delivery Section
+   =================================== */
+
+.delivery p {
+    line-height: 1.7;
+}
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: black;
+}
+
+/* ===================================
+   Team Section
+   =================================== */
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.team-card img {
+    height: 260px;
+    object-fit: cover;
+}
+
+.team-card h5 {
+    font-size: 18px;
+    color: #002603;
+}
+
+.team-title p {
+    color: #777;
+    max-width: 700px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+}
+
+/* ===================================
+   Testimonial Section
+   =================================== */
+
+.testimonial .card p{
+    line-height:1.6;
+}
+
+.testimonial img{
+    object-fit:cover;
+}
+
+.btn-outline-secondary:hover{
+    background:#00b207;
+    border-color:#00b207;
+    color:#fff;
+}
+
+/* ===================================
+   Company Logo & Newsletter Tweaks
+   =================================== */
+.company-img{
+    max-height:40px;
+    object-fit:contain;
+    filter:grayscale(100%);
+    opacity:.6;
+    transition:.3s;
+}
+
+.company-img:hover{
+    filter:grayscale(0);
+    opacity:1;
+}
+
+.input-group .form-control {
+    border-right: 0;
+    box-shadow: none;
+}
+
+.input-group .btn {
+    z-index: 5;
+}
+
+.footer-img {
+    width: 60px;
+    height: 35px;
+    object-fit: contain;
+    cursor: pointer;
+}

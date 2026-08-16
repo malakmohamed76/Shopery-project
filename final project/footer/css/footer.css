@@ -1,0 +1,19 @@
+
+
+   * {
+        margin: 0;
+        padding: 0;
+    }
+
+.input-group .form-control{
+    border-right: 0;
+    box-shadow: none;
+}
+
+.input-group .btn{
+    margin-left: -70px !important;
+    z-index: 5;
+}
+.footer-img{
+margin-left: 30%;
+}

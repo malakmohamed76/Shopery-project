@@ -1,0 +1,122 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.login-body {
+ 
+
+  width: 400px;
+  height: 100vh;
+}
+
+.wrapper {
+  margin: auto;
+  width: 35%;
+  text-align: center;
+  border: 1px solid #f9f9f9;
+  border-radius: 12px;
+  padding: 50px 50px 20px 20px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper h2 {
+  font-size: 30px;
+  color: #000;
+}
+.input-field {
+  position: relative;
+}
+.input-field input[type="text"],
+.input-field input[type="email"],
+.input-field input[type="password"] {
+  border-radius: 10px;
+  background: transparent;
+  margin: 15px;
+  border: 2px solid #ccc;
+  width: 100%;
+  height: 2px;
+  padding: 25px 40px 20px 20px;
+  outline: none;
+  color: #000;
+}
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #000;
+}
+input::placeholder {
+  color: #000;
+}
+.input-field input[type="text"]:focus::placeholder,
+.input-field input[type="email"]:focus::placeholder,
+.input-field input[type="password"]:focus::placeholder {
+  transform: translateY(-90%);
+  transition: transform 0.2s ease-in-out;
+  font-size: 14px;
+}
+.input-field input[type="text"]:not(:focus)::placeholder,
+.input-field input[type="email"]:not(:focus)::placeholder,
+.input-field input[type="password"]:not(:focus)::placeholder {
+  transform: translateY(0%);
+  transition: transform 0.2s ease-in-out;
+  font-size: 16px;
+}
+a.forgot {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+}
+a.forgot:hover {
+  text-decoration: underline;
+  color: #000;
+}
+a.sign-up {
+  font-weight: 600;
+  font-size: 18px;
+}
+.wrapper button {
+  margin-left: 20px;
+  position: relative;
+}
+.wrapper .login {
+  background: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 45px;
+  width: 100%;
+  height: 35px;
+}
+.wrapper .p-sign-up {
+  font-weight: bold;
+  color: #ccc;
+}
+.wrapper .p-sign-up a {
+  text-decoration: none;
+}
+.spinner-border {
+  position: absolute;
+  top: 10%;
+  left: 47%;
+  visibility: hidden;
+}
+

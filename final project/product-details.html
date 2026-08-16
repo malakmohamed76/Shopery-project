@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style_3.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+   
+    <header>
+        <div class="top-bar py-2 border-bottom">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="text-secondary small">
+                        <i class="bi bi-geo-alt"></i>
+                        Store Location: Lincoln-344, Illinois, Chicago, USA
+                    </div>
+
+                    <div class="d-flex gap-3 small text-secondary">
+
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-secondary" data-bs-toggle="dropdown">
+                                Eng
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-secondary" data-bs-toggle="dropdown">
+                                USD
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EGP</a></li>
+                            </ul>
+                        </div>
+
+                        <ul id="links">
+
+                            <li><a href="login&register.html">Sign up</a></li>
+                        </ul>
+                        <ul id="user_info">
+                            <li><a href="#" id="user"></a></li>
+                            <li><a href="#" id="logout">
+                                    <i class="fa-solid fa-right-from-bracket"></i> <br>
+                                    <span>logout</span> </a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="py-4">
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-3">
+                        <h2 class="logo">
+                            <i class="fa-solid fa-leaf text-success"></i>
+                            <a href="index.html" class="text-dark"> Ecobazar</a>
+                        </h2>
+                    </div>
+
+                    <!-- Search -->
+
+                    <div class="col-lg-6">
+
+                        <div class="input-group">
+
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <input type="text" class="form-control" placeholder="Search">
+
+                            <button class="btn btn-success px-4 z-3">
+                                Search
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Icons -->
+
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-end align-items-center gap-4">
+
+                            <i class="bi bi-heart fs-4"></i>
+
+                            <div class="vr"></div>
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <i class="bi bi-bag fs-4"></i>
+
+                                <div>
+
+                                    <small class="text-secondary">
+                                        Shopping cart
+                                    </small>
+
+                                    <h6 class="mb-0">
+                                        $57.00
+                                    </h6>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <!-- Home -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+
+                                Home
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Shop -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                Shop
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="shop.html">Shop Grid</a></li>
+                                  <li><a class="dropdown-item" href="shopping-cart.html">Shop Cart</a></li>
+                                   <li><a class="dropdown-item" href="product-details.html">Shop Details</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Pages -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                Pages
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="whislist.html">WhishList</a></li>
+                                <li><a class="dropdown-item" href="About.html">About</a></li>
+                                <li><a class="dropdown-item" href="Contact.html">contact Us</a></li>
+                                <li><a class="dropdown-item" href="Checkout.html">checkout</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="order history.html">Order History</a></li>
+
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">404</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Blog -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+
+                                Blog
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="blog-list.html">Blog List</a></li>
+                                <li><a class="dropdown-item" href="order-details.html">order Details</a></li>
+                                <li><a class="dropdown-item" href="settings.html">Setting</a></li>
+
+
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="ms-auto text-white">
+
+                        <i class="bi bi-telephone"></i>
+
+                        (219) 555-0114
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Navigation Bar -->
+  
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section position-relative overflow-hidden">
+      <div class="breadcrumb-image-wrapper">
+        <img
+          src="images/Breadcrumbs.jpeg"
+          alt="Breadcrumb Banner"
+          class="breadcrumb-img w-100"
+          style="object-fit: cover"
+        />
+      </div>
+      <div
+        class="container h-100 breadcrumb-overlay position-absolute top-0 start-50 translate-middle-x d-flex align-items-center"
+      >
+        <div class="d-flex align-items-center gap-2 text-white">
+          <a href="index.html" class="text-white"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span class="fw-medium">product details</span>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+                  PRODUCT GALLERY 
+     ========================================================= -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 d-flex gap-3">
+            <div class="d-flex flex-column gap-2">
+              <button id="upBtn" class="border rounded p-1 bg-transparent">
+                <i class="fa fa-chevron-up"></i>
+              </button>
+
+              <img
+                src="images/3-Slide_1.png"
+                class="border border-success rounded p-1"
+                width="70"
+              />
+
+              <img
+                src="images/3-Slide_2.png"
+                class="border rounded p-1"
+                width="70"
+              />
+
+              <img
+                src="images/3-Slide_3.png"
+                class="border rounded p-1"
+                width="70"
+              />
+
+              <img
+                src="images/3-Slide_4.png"
+                class="border rounded p-1"
+                width="70"
+              />
+
+              <button id="downBtn" class="border rounded p-1 bg-transparent">
+                <i class="fa fa-chevron-down"></i>
+              </button>
+            </div>
+
+            <img
+              id="mainImage"
+              src="images/3-Product Details Images_product image full.png"
+              class="img-fluid"
+              alt="Chinese Cabbage"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="h2 d-inline-block me-2">Chinese Cabbage</h1>
+            <span
+              class="badge rounded-pill"
+              style="
+                background: var(--color-primary-light);
+                color: var(--color-primary);
+              "
+              >In Stock</span
+            >
+            <div class="d-flex align-items-center gap-2 my-2">
+              <span class="rating">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i>
+                <span class="rating__count">4 Review</span>
+              </span>
+              <span class="text-muted small"> SKU: 2,51,594</span>
+            </div>
+            <div class="d-flex align-items-center gap-2 my-3">
+              <span class="text-muted text-decoration-line-through fs-5"
+                >$48.00</span
+              >
+              <span class="fs-3 fw-bold text-success">$17.28</span>
+              <span
+                class="badge"
+                style="background: #ffe9e9; color: var(--color-sale)"
+                >64% Off</span
+              >
+            </div>
+            <hr />
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="fw-semibold">Brand:</span>
+
+              <span class="fw-semibold ms-4">Share item:</span>
+              <a href="#" class="btn btn-success btn-sm rounded-circle"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <p class="text-muted">
+              Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
+              consequat nec, ultrices et ipsum. Nulla varius magna a consequat
+              pulvinar.
+            </p>
+            <div class="d-flex align-items-center gap-3 my-4">
+              <div class="qty-control">
+                <button class="qty-control__btn">-</button>
+                <span class="qty-control__value">5</span>
+                <button class="qty-control__btn">+</button>
+              </div>
+              <button
+                class="btn btn-success rounded-pill px-5 py-2 fw-semibold flex-grow-1"
+              >
+                Add to Cart <i class="fa-solid fa-bag-shopping ms-2"></i>
+              </button>
+              <button class="btn btn-outline-success rounded-circle">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <p class="mb-1">
+              <strong>Category:</strong>
+              <span class="text-muted">Vegetables</span>
+            </p>
+            <p>
+              <strong>Tag:</strong>
+              <span class="text-muted">Vegetables Healthy</span> <u>Chinese</u>
+              <span class="text-muted">Cabbage Green Cabbage</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- =====================================================
+         PRODUCT TABS  Description / Additional Info AND Feedback
+         ===================================================== -->
+        <div class="product-tabs mt-4">
+          <ul class="nav product-tabs__nav" id="productTab">
+            <li class="nav-item">
+              <button class="product-tabs__link active">Descriptions</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="product-tabs__link">Additional Information</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="product-tabs__link"
+                id="feedback-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#feedback"
+                type="button"
+                role="tab"
+                aria-controls="feedback"
+                aria-selected="false"
+              >
+                Customer Feedback
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content product-tabs__content" id="productTabContent">
+          <!-- ---------------- Descriptions Tab  ---------------- -->
+          <div class="tab-pane fade show active" id="description">
+            <div class="additional-info">
+              <div class="additional-info__specs">
+                <p class="text-muted">
+                  Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet
+                  at posuere ac, viverra at mauris. Maecenas tincidunt ligula a
+                  sem vestibulum pharetra. Maecenas auctor tortor lacus, nec
+                  laoreet nisi porttitor. Etiam tincidunt metus vel dui interdum
+                  sollicitudin. Mauris sem ante, vestibulum non orci vitae,
+                  aliquam mollis lacus. Sed et condimentum arcu, id molestie
+                  tellus. Nulla facilisi. Nam scelerisque vitae justo a
+                  convallis. Morbi urna ipsum, placerat quis commodo quis,
+                  egestas elementum leo. Donec convallis mollis enim. Aliquam id
+                  mi quam. Phasellus nec fringilla elit.
+                </p>
+                <p class="text-muted">
+                  Nulla mauris tellus, feugiat quis pharetra sed, gravida ac
+                  dui. Sed iaculis, metus faucibus elementum tincidunt, turpis
+                  mi viverra velit, pellentesque tristique neque id eget nulla.
+                  Proin luctus elementum neque et pharetra.
+                </p>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa fa-circle-check text-success me-2"></i>100 g of
+                    fresh leaves provides.
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa fa-circle-check text-success me-2"></i>Aliquam
+                    ac est at augue volutpat elementum.
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa fa-circle-check text-success me-2"></i>Quisque
+                    nec enim eget sapien molestie.
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa fa-circle-check text-success me-2"></i>Proin
+                    convallis odio volutpat finibus posuere.
+                  </li>
+                </ul>
+                <p class="text-muted">
+                  Cras et diam maximus, accumsan sapien et, sollicitudin velit.
+                  Nulla blandit eros non turpis lobortis iaculis at ut massa.
+                </p>
+              </div>
+              <div class="additional-info__media">
+                <div class="additional-info__promo">
+                  <img
+                    src="images/3-man_image.png"
+                    class="additional-info__promo-img"
+                  />
+                  <button class="additional-info__play-btn">
+                    <i class="fa fa-play"></i>
+                  </button>
+                </div>
+                <div class="additional-info__features">
+                  <div class="additional-info__feature">
+                    <div class="additional-info__feature-icon">
+                      <i class="fa fa-tags"></i>
+                    </div>
+                    <div>
+                      <p class="additional-info__feature-title">64% Discount</p>
+                      <p class="additional-info__feature-text">
+                        Save your 64% money with us
+                      </p>
+                    </div>
+                  </div>
+                  <div class="additional-info__feature">
+                    <div class="additional-info__feature-icon">
+                      <i class="fa fa-leaf"></i>
+                    </div>
+                    <div>
+                      <p class="additional-info__feature-title">100% Organic</p>
+                      <p class="additional-info__feature-text">
+                        100% Organic Vegetables
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ----------------  Additional Information Tab ---------------- -->
+          <div class="tab-pane fade" id="additional">
+            <div class="additional-info">
+              <div class="additional-info__specs">
+                <div class="additional-info__row">
+                  <span class="additional-info__label">Weight:</span>
+                  <span class="additional-info__value">03</span>
+                </div>
+                <div class="additional-info__row">
+                  <span class="additional-info__label">Color:</span>
+                  <span class="additional-info__value">Green</span>
+                </div>
+                <div class="additional-info__row">
+                  <span class="additional-info__label">Type:</span>
+                  <span class="additional-info__value">Organic</span>
+                </div>
+                <div class="additional-info__row">
+                  <span class="additional-info__label">Category:</span>
+                  <span class="additional-info__value">Vegetables</span>
+                </div>
+                <div class="additional-info__row">
+                  <span class="additional-info__label">Stock Status:</span>
+                  <span class="additional-info__value">Available (5,413)</span>
+                </div>
+                <div class="additional-info__row">
+                  <span class="additional-info__label">Tags:</span>
+                  <span class="additional-info__value"
+                    >Vegetables, Healthy, <u>Chinese</u>, Cabbage, Green
+                    Cabbage,</span
+                  >
+                </div>
+              </div>
+
+              <div class="additional-info__media">
+                <div class="additional-info__promo">
+                  <img
+                    src="images/3-man_image.png"
+                    class="additional-info__promo-img"
+                  />
+                  <button
+                    class="additional-info__play-btn"
+                    aria-label="Play video"
+                  >
+                    <i class="fa fa-play"></i>
+                  </button>
+                </div>
+                <div class="additional-info__features">
+                  <div class="additional-info__feature">
+                    <div class="additional-info__feature-icon">
+                      <i class="fa fa-tags"></i>
+                    </div>
+                    <div>
+                      <p class="additional-info__feature-title">64% Discount</p>
+                      <p class="additional-info__feature-text">
+                        Save your 64% money with us
+                      </p>
+                    </div>
+                  </div>
+                  <div class="additional-info__feature">
+                    <div class="additional-info__feature-icon">
+                      <i class="fa fa-leaf"></i>
+                    </div>
+                    <div>
+                      <p class="additional-info__feature-title">100% Organic</p>
+                      <p class="additional-info__feature-text">
+                        100% Organic Vegetables
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ----------------  Customer Feedback Tab ---------------- -->
+          <div class="tab-pane fade" id="feedback">
+            <div class="feedback">
+              <div class="feedback__item">
+                <img src="images/3_FeedBack_1.png" class="feedback__avatar" />
+                <div class="feedback__body">
+                  <div class="feedback__header">
+                    <p class="feedback__name">Kristin Watson</p>
+                    <span class="feedback__verified"
+                      ><i class="fa fa-circle-check"></i> Verified
+                      Purchase</span
+                    >
+                  </div>
+                  <div class="feedback__meta">
+                    <span class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </span>
+                    <span class="feedback__date">2 min ago</span>
+                  </div>
+                  <p class="feedback__text">
+                    Duis at ullamcorper nulla, eu dictum eros.
+                  </p>
+                  <div class="feedback__actions">
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-thumbs-up"></i> Helpful
+                    </button>
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-message"></i> Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feedback__item">
+                <div class="feedback__avatar feedback__avatar--placeholder">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="feedback__body">
+                  <div class="feedback__header">
+                    <p class="feedback__name">Jane Cooper</p>
+                  </div>
+                  <div class="feedback__meta">
+                    <span class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="feedback__date">30 Apr, 2021</span>
+                  </div>
+                  <p class="feedback__text">
+                    Keep the soil evenly moist for the healthiest growth. If the
+                    sun gets too hot, Chinese cabbage tends to bolt& or g to
+                    seed; in long periods of heat, some kind of shade may be
+                    helpful. Watch out for snails, as they will harm the plants.
+                  </p>
+                  <div class="feedback__actions">
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-thumbs-up"></i> Helpful
+                    </button>
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-message"></i> Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feedback__item">
+                <img
+                  src="images/3_FeedBack_2.png"
+                  class="feedback__avatar"
+                  alt="Jacob Jones"
+                />
+                <div class="feedback__body">
+                  <div class="feedback__header">
+                    <p class="feedback__name">Jacob Jones</p>
+                    <span class="feedback__verified"
+                      ><i class="fa fa-circle-check"></i> Verified
+                      Purchase</span
+                    >
+                  </div>
+                  <div class="feedback__meta">
+                    <span class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </span>
+                    <span class="feedback__date">2 min ago</span>
+                  </div>
+                  <p class="feedback__text">
+                    Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia
+                    lacus.
+                  </p>
+                  <div class="feedback__actions">
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-thumbs-up"></i> Helpful
+                    </button>
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-message"></i> Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feedback__item">
+                <img src="images/3_FeedBack_4.png" class="feedback__avatar" />
+                <div class="feedback__body">
+                  <div class="feedback__header">
+                    <p class="feedback__name">Ralph Edwards</p>
+                    <span class="feedback__verified"
+                      ><i class="fa fa-circle-check"></i> Verified
+                      Purchase</span
+                    >
+                  </div>
+                  <div class="feedback__meta">
+                    <span class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </span>
+                    <span class="feedback__date">2 min ago</span>
+                  </div>
+                  <p class="feedback__text">
+                    200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom
+                    Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a.
+                    Cantons Choice, Bok Choi, from USA
+                  </p>
+                  <div class="feedback__actions">
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-thumbs-up"></i> Helpful
+                    </button>
+                    <button class="feedback__action-btn">
+                      <i class="fa-regular fa-message"></i> Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feedback__load-more">
+                <button
+                  type="button"
+                  class="feedback__load-more-btn"
+                  id="loadMoreFeedback"
+                >
+                  Load More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Products  -->
+        <h3 class="text-center my-5">Related Products</h3>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="card border-0 position-relative">
+              <span class="badge bg-danger position-absolute m-2"
+                >Sale 50%</span
+              >
+              <img
+                src="images/3-Related Products_product_1.png"
+                class="card-img-top"
+              />
+              <div class="card-body px-0">
+                <p class="mb-1 fw-semibold">Green Apple</p>
+                <p class="mb-1">
+                  <span class="fw-bold">$14.99</span>
+                  <span class="text-muted text-decoration-line-through"
+                    >$20.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card border-0">
+              <img
+                src="images/3-Related Products_product_2.png"
+                class="card-img-top"
+              />
+              <div class="card-body px-0">
+                <p class="mb-1 fw-semibold">Chanise Cabbage</p>
+                <p class="mb-1 fw-bold">$14.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card border border-success">
+              <img
+                src="images/3-Related Products_product_3.png"
+                class="card-img-top"
+              />
+              <div class="card-body px-0">
+                <p class="mb-1 fw-semibold text-success">Green Capsicum</p>
+                <p class="mb-1 fw-bold">$14.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card border-0">
+              <img
+                src="images/3-Related Products_product_4.png"
+                class="card-img-top"
+              />
+              <div class="card-body px-0">
+                <p class="mb-1 fw-semibold">Ladies Finger</p>
+                <p class="mb-1 fw-bold">$14.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <h5>Subcribe our Newsletter</h5>
+            <p class="text-secondary">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna.
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="input-group pt-4">
+              <input
+                type="email"
+                class="form-control border-end-0 rounded-pill ps-4"
+                placeholder="Your email address"
+              />
+
+              <button class="btn btn-success rounded-pill px-4" type="button">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3 pt-4">
+            <img
+              src="images/facebook 1.png"
+              alt=""
+              class="bg-success py-2 px-2 rounded-circle footer-img"
+            />
+            <img src="images/Social Media (1).png" alt="" />
+            <img src="images/Social Media (2).png" alt="" />
+            <img src="images/Social Media.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="fw-bold">
+              <i class="fa-solid fa-leaf text-success"></i>
+              Ecobazar
+            </h3>
+
+            <p class="text-secondary mt-3">
+              Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+              dui, eget bibendum magna congue nec.
+            </p>
+
+            <div class="d-flex align-items-center gap-2 mt-4">
+              <span class="border-bottom border-success pb-1"
+                >(219) 555-0114</span
+              >
+              <span class="text-secondary">or</span>
+              <span class="border-bottom border-success pb-1">
+                Proxy@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">My Account</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >My Account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Order History</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Shopping Cart</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Wishlist</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Helps</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none">Faqs</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Terms & Condition</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Proxy</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none">Shop</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Track Order</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Categories</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Fruit & Vegetables</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Meat & Fish</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Bread & Bakery</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Beauty & Health</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="text-secondary mb-3 mb-md-0">
+            Ecobazar eCommerce © 2021. All Rights Reserved
+          </p>
+
+          <div class="d-flex gap-2">
+            <img src="images/apple-pay.png" width="45" alt="" />
+            <img src="images/visa.png" width="45" alt="" />
+            <img src="images/discover.png" width="45" alt="" />
+            <img src="images/mastercard.png" width="45" alt="" />
+            <img src="images/secure-payment.png" width="55" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -------------------------------------------
+                    popups
+    ------------------------------------------------->
+
+    <div class="cart-drawer">
+      <div class="cart-drawer__overlay"></div>
+
+      <div class="cart-drawer__panel">
+        <div class="cart-drawer__header">
+          <h5 class="cart-drawer__title">Shopping Cart (2)</h5>
+
+          <button type="button" class="cart-drawer__close">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+
+        <div class="cart-drawer__body">
+          <div class="cart-drawer__item">
+            <img
+              class="cart-drawer__img"
+              src="images/3_product_for_cartpopup_2.jpg"
+              alt="Fresh Indian Orange"
+            />
+
+            <div class="cart-drawer__info">
+              <p class="cart-drawer__name">Fresh Indian Orange</p>
+
+              <p class="cart-drawer__qty">1 Kg × <strong>$12</strong></p>
+            </div>
+
+            <button class="cart-drawer__remove">
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+
+          <div class="cart-drawer__item">
+            <img
+              class="cart-drawer__img"
+              src="images/3_product_for_cart_popup_1.jpg"
+              alt="Green Apple"
+            />
+
+            <div class="cart-drawer__info">
+              <p class="cart-drawer__name">Green Apple</p>
+
+              <p class="cart-drawer__qty">1 Kg × <strong>$14</strong></p>
+            </div>
+
+            <button class="cart-drawer__remove">
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="cart-drawer__footer">
+          <div class="cart-drawer__total">
+            <span>2 Product</span>
+            <span>$26.00</span>
+          </div>
+
+          <a
+            href="Checkout.html"
+            class="cart-drawer__btn cart-drawer__btn--checkout"
+          >
+            Checkout
+          </a>
+
+          <a
+            href="shopping-cart.html"
+            class="cart-drawer__btn cart-drawer__btn--cart"
+          >
+            Go To Cart
+          </a>
+        </div>
+      </div>
+    </div>
+
+       <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/shopping-cart-popus.js"></script>
+    <script src="js/product_details.js"></script>
+  </body>
+</html>
