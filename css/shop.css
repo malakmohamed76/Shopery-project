@@ -10,10 +10,11 @@
 
 
 /* ===================filter=========================== */
-
-.product-img{
-    height: 100% !important;
+.product-card .product-img{
+    height: 300px;
+    width: 100% !important;
 }
+
 .filter-btn{
 
     background:#198754;
@@ -21,8 +22,6 @@
     border:none;
     font-weight:600;
 }
-
-
 .filter-btn:hover{
 
     background:#146c43;
@@ -78,81 +77,40 @@
     cursor:pointer;
 
 }
-
-
-
 .form-check-label span{
-
     color:#999;
-
 }
-
-
-
 .active-category{
-
     color:#198754 !important;
     font-weight:bold;
 
 }
-
-
-
-
 .form-range{
-
     accent-color:#198754;
-
 }
-
-
-
-
 .price-text{
-
     color:#777;
-
 }
-
-
 .price-text strong{
-
     color:#198754;
-
 }
-
-
-
-
 .rating-item{
-
     display:flex;
     gap:15px;
     margin-bottom:12px;
 
 }
-
-
-
 .stars{
-
     color:#ffc107;
     font-size:18px;
-
 }
-
-
-
 
 .tags{
 
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-
 }
-
-
 
 .tag-btn{
 
@@ -161,10 +119,7 @@
     padding:8px 15px;
     border-radius:20px;
     transition:.3s;
-
 }
-
-
 
 .tag-btn:hover,
 .tag-btn.active{
